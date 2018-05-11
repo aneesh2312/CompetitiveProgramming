@@ -1,5 +1,8 @@
 /*
-	Hint is gcd(x, x+1) = 1. Then it is just plain dfs.
+	Hint is gcd(x, x+1) = 1. What I did is this - For each connected component, start from any node, do a dfs marking the edges taken
+	with continuous numbers (like 1, 2, 3, ...). The leaf node, if it has more than 1 edge, then any one of it's remaining edges will also be marked with
+	the next number. This will ensure that all nodes in the connected component have either only 1 edge, or 2 edges with numbers x and x+1.
+	So gcd will be 1 for each node.
 */
 
 #include <bits/stdc++.h>

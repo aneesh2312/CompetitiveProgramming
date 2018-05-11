@@ -1,6 +1,7 @@
 /*
 	Easy problem. Do a dijkstra based on total cost of attending concert. Start with node with minimum a[i], update the cost
 	for other nodes. Select node with minimum cost among those not selected yet, so on..	
+	Detailed explanation here - http://codeforces.com/blog/entry/57840
 */
 
 #include <bits/stdc++.h>

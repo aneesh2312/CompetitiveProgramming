@@ -1,6 +1,7 @@
 /*
 	Easy problem. Do a dfs, and keep note of how many + and - that a particular subtree needs. For a node X, making all nodes in it's 
 	subtree except X zero will require (maximum number of - operations for it's children) + (maximum number of + operations for it's children).
+	More detailed explanation in http://codeforces.com/blog/entry/6759
 */
 #include <bits/stdc++.h>
 #define adj_list vector<vi>
